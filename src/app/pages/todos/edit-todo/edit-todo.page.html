@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>edit-todo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">edit-todo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-input [(ngModel)]="title" name="title" placeholder="Title"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input [(ngModel)]="description" name="description" placeholder="Description"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="updateTodo()">Update</ion-button>
+</ion-content>
